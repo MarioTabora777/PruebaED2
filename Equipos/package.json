@@ -24,6 +24,8 @@
     "pretest": "npm run rebuild",
     "test": "lb-mocha --allow-console-logs \"dist/__tests__\"",
     "posttest": "npm run lint",
+    " postinstall": "npm run build",
+    "start: prod": "node dist / index.js",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "docker:build": "docker build -t holahola .",
     "docker:run": "docker run -p 3000:3000 -d holahola",
@@ -37,7 +39,7 @@
     "rebuild": "npm run clean && npm run build"
   },
   "repository": {
-    "type": "git",
+    "type": "",
     "url": ""
   },
   "author": "MarioTabora777 <46462339+MarioTabora777@users.noreply.github.com>",
